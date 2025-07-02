@@ -1,0 +1,13 @@
+services:
+  - type: cron
+    name: geowars-news-generator
+    runtime: python
+    plan: starter
+    schedule: "0 9,21 * * *"  # Tous les jours à 9h et 21h UTC
+    buildCommand: ""
+    startCommand: "python generate_news_gnews.py"
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GNEWS_API_KEY
+        sync: false
