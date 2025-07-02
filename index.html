@@ -3,53 +3,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>GeoWars - Invest in Global Conflicts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeoWars | Track the Conflicts. Trade the Tension.</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #111; color: #fff; }
+        header { background: #1a1a1a; padding: 1em 2em; display: flex; justify-content: space-between; align-items: center; }
+        header h1 { margin: 0; color: #58a6ff; }
+        nav { position: relative; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5em; }
+        nav li { position: relative; }
+        nav a { color: #fff; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2b2b2b;
+            min-width: 250px;
+            z-index: 1;
+            top: 100%;
+            left: 0;
+            border-radius: 5px;
+            padding: 0.5em 0;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 0.5em 1em;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #3f3f3f;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container { padding: 2em; max-width: 900px; margin: auto; }
+
+        h2 { color: #58a6ff; margin-top: 2em; }
+        ul { line-height: 1.6; }
+    </style>
 </head>
 <body>
     <header>
         <h1>GeoWars</h1>
-        <p class="slogan">Track the Conflicts. Trade the Tension.</p>
         <nav>
-            <a href="#about">About</a>
-            <a href="#tokens">Tokens</a>
-            <a href="#how">How it Works</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Tokens ▾</a>
+                    <div class="dropdown-content">
+<a href="irz.html">$IRZ — Iran vs Israel</a>
+<a href="nvbs.html">$NVBS — NATO vs BRICS</a>
+<a href="ukr.html">$UKR — Russia vs Ukraine</a>
+<a href="inpk.html">$INPK — India vs Pakistan</a>
+<a href="nksk.html">$NKSK — North vs South Korea</a>
+<a href="tai.html">$TAI — China vs Taiwan</a>
+<a href="#">$WW3 — Master Token (locked until global war)</a>
+
+                    </div>
+                </li>
+                <li><a href="#">How it Works</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="about">
+    <div class="container">
         <h2>About GeoWars</h2>
         <p>GeoWars is the first crypto ecosystem based on real-world geopolitical tension. Each token represents a major global conflict, and all can be migrated to the master token $WW3 in case of a global war declaration.</p>
-    </section>
 
-    <section id="tokens">
         <h2>Active Tokens</h2>
         <ul>
-            <li>$IRZ — Iran vs Israel</li>
-            <li>$NVBS — NATO vs BRICS</li>
-            <li>$UKR — Russia vs Ukraine</li>
-            <li>$INPK — India vs Pakistan</li>
-            <li>$NKSK — North vs South Korea</li>
-            <li>$RDAZ — DRC vs Rwanda</li>
-            <li>$CTHD — Cambodia vs Thailand</li>
-            <li>$WW3 — Master Token (locked until global war)</li>
+<li>$IRZ — Iran vs Israel</li>
+<li>$NVBS — NATO vs BRICS</li>
+<li>$UKR — Russia vs Ukraine</li>
+<li>$INPK — India vs Pakistan</li>
+<li>$NKSK — North vs South Korea</li>
+<li>$TAI — China vs Taiwan</li>
+<li>$WW3 — Master Token (locked until global war)</li>
+
         </ul>
-    </section>
 
-    <section id="how">
+        
         <h2>How it Works</h2>
-        <p>Each token follows regional tension. When WW3 is triggered, all tokens are automatically migrated to $WW3. Sell limits apply: 10% unlocked every 15 days, max $25,000 per wallet per period.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: admin@geowars.io</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 GeoWars. All rights reserved.</p>
-    </footer>
+        <p>GeoWars is more than just another crypto project — it is a symbolic and community-powered ecosystem that reflects the reality of growing global tension.</p>
+        <p>Each token is tied to a major conflict. When the world reaches the point of no return and a global war is declared, all token holders will automatically be migrated to the master token: <strong>$WW3</strong>.</p>
+        <p>By default, strict sell limits apply:</p>
+        <ul>
+            <li>10% of your balance unlocked every 15 days</li>
+            <li>Maximum $25,000 sold per wallet per period</li>
+        </ul>
+        <p>These limits are designed to protect liquidity and preserve long-term trust.</p>
+        <p>However, GeoWars is also democratic:<br>
+        Once the combined number of holders across all tokens exceeds 100,000, a public vote will be launched to revise or reaffirm these rules.</p>
+        <p>This is not just a coin. This is a mirror of our time — a world standing closer to World War III in 2025 than ever before. With rising global militarization, geopolitical polarization, and mass mobilizations, GeoWars gives the people a voice and a choice.</p>
+    </div>
 </body>
 </html>
